@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="https://uxwing.com/wp-content/themes/uxwing/download/video-photography-multimedia/film-movie-reel-icon.png" alt="film-roll" style="height: 100px;">
+        <h1>Movie Tracker</h1>
+        <img src="https://static.vecteezy.com/system/resources/previews/013/532/363/non_2x/cinema-clapboard-transparent-free-png.png" alt="clapperboard" style="height: 100px;">
+    </header>
+    <div id="sort-buttons">
+        <div class="sort"><button id="sort-by-name">Sort by Name</button>
+        <button id="sort-by-release">Sort by Release Date</button>
+        <button id="sort-by-rating">Sort by Rating</button>
+        <button id="sort-by-date">Sort by Date of Addition</button></div>
+        <div class="view"><button id="list">View List</button>
+        <button id="table">View Table</button></div>
+    </div>
+    <section>
+        <ul id="movie-list"></ul>
+    </section>
+    <aside id="movie-form">
+        <form id="add-movie">
+            <h2 style="text-align: center; background-color: thistle; border-radius: 10px;">Add New Movie</h2>
+            <p><label for="name">Title: </label>
+            <input type="text" name="name" id="name"></p>
+            <p><label for="description">Description: </label></p>
+            <p><textarea name="description" id="description" cols="35" rows="5"></textarea></p>
+            <p><label for="img">Image URL: </label>
+            <input type="url" id="img" name="img"></p>
+            <p><label for="year">Release Date: </label>
+            <input type="date" name="year" id="year"></p>
+            <p><label for="rating">IMDb Rating: </label>
+            <input type="number" name="rating" id="rating" step="any"></p>
+            <p><label for="date">Date: </label>
+            <input type="date" name="date" id="date"></p>
+            <p style="text-align: center;"><input type="submit" id="submit" value="Add Movie"></p>
+        </form>
+    </aside>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
